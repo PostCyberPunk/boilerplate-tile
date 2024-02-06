@@ -1,3 +1,7 @@
+use bevy::prelude::*;
 fn main() {
-    println!("Hello, world!");
+    App::new().add_systems(Startup, hello_world).run()
+}
+fn hello_world() {
+    println!("Hello World,this is a bevy project");
 }
